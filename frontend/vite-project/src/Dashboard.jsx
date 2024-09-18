@@ -26,6 +26,7 @@ export function Dashboard() {
     return (
         <div className="dashboard-container">
             <h1>Bienvenido al Dashboard</h1>
+            <h2>Sé tu mejor versión</h2>
             {userData ? (
                 <div>
                     <p>Email: {userData.email}</p>
