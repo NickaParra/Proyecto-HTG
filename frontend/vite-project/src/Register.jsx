@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import './Register.css';
+<<<<<<< HEAD
+=======
+import pantalla from './assets/pantalla.png.jpg';
+>>>>>>> 7dc36d73e5849ab3229e597d870aa014b8e59078
 
 export function Register() {
     // Estados para cada campo del formulario
@@ -31,8 +35,13 @@ export function Register() {
         }
 
         // Enviar los datos al servidor
+<<<<<<< HEAD
         axios.post('http://localhost:3000/register', {
             fullName, age, gender, address, phone, email, password, confirmPassword
+=======
+        axios.post('http://localhost:4000/register', {
+            fullName, age, gender, address, phone, email, password
+>>>>>>> 7dc36d73e5849ab3229e597d870aa014b8e59078
         })
             .then(res => {
                 if (res.status === 200) {
@@ -43,7 +52,11 @@ export function Register() {
                     // Redirigir después de un breve tiempo
                     setTimeout(() => {
                         setIsModalOpen(false);
+<<<<<<< HEAD
                         navigate('./Dashboard.jsx');
+=======
+                        navigate('/dashboard');
+>>>>>>> 7dc36d73e5849ab3229e597d870aa014b8e59078
                     }, 2000);
                 }
             })
@@ -74,6 +87,11 @@ export function Register() {
     return (
         <div className="register-container">
             <h1>Registro de Usuario</h1>
+<<<<<<< HEAD
+=======
+            <img src={pantalla} alt="pantalla" />
+
+>>>>>>> 7dc36d73e5849ab3229e597d870aa014b8e59078
             <form onSubmit={step === 2 ? handleSubmit : e => e.preventDefault()}>
                 {step === 1 && (
                     <fieldset>

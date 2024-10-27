@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import axios from 'axios';
+<<<<<<< HEAD
 import { useNavigate } from "react-router-dom"; // Importar useNavigate para redirigir
 import './Login.css';
 
+=======
+import { useNavigate } from "react-router-dom";
+import './Login.css';
+import pantalla from './assets/pantalla.png.jpg';
+>>>>>>> 7dc36d73e5849ab3229e597d870aa014b8e59078
 
 export function Login() {
     const [email, setEmail] = useState('');
@@ -10,6 +16,7 @@ export function Login() {
     const [isModalOpen, setIsModalOpen] = useState(false); // Estado para mostrar el modal
     const [modalMessage, setModalMessage] = useState('');  // Mensaje del modal
     const [modalType, setModalType] = useState('');        // Tipo de mensaje (éxito o error)
+<<<<<<< HEAD
     const navigate = useNavigate(); // Hook para redirigir a otras rutas
 
     const apiKey = "6$ty9EyLqWHPJzVd$KFtV7MK3"; // Define tu clave API aquí
@@ -32,17 +39,36 @@ export function Login() {
                     setModalMessage("Inicio de sesión exitoso.");
                     setModalType('success');
                     setIsModalOpen(true); // Mostrar el modal de éxito 
+=======
+    const navigate = useNavigate();
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        axios.post('http://localhost:4000/login', { email, password })
+            .then(res => {
+                if (res.status === 200) {
+                    setModalMessage("Inicio de sesión exitoso.");
+                    setModalType('success');
+                    setIsModalOpen(true); // Mostrar el modal de éxito
+>>>>>>> 7dc36d73e5849ab3229e597d870aa014b8e59078
 
                     // Redirigir después de un breve tiempo
                     setTimeout(() => {
                         setIsModalOpen(false);
+<<<<<<< HEAD
                         navigate('/Dashboard'); // Redirigir al Dashboard
+=======
+                        navigate('/dashboard');
+>>>>>>> 7dc36d73e5849ab3229e597d870aa014b8e59078
                     }, 2000);
                 }
             })
             .catch(err => {
                 console.log(err);
+<<<<<<< HEAD
                 // Configurar mensaje de error
+=======
+>>>>>>> 7dc36d73e5849ab3229e597d870aa014b8e59078
                 setModalMessage("Error al iniciar sesión. Verifica tus credenciales.");
                 setModalType('error');
                 setIsModalOpen(true); // Mostrar el modal de error
@@ -55,7 +81,11 @@ export function Login() {
     return (
         <div className="login-container">
             <h1>Inicio de sesión</h1>
+<<<<<<< HEAD
           
+=======
+            <img src={pantalla} alt="pantalla" />
+>>>>>>> 7dc36d73e5849ab3229e597d870aa014b8e59078
 
             <form onSubmit={handleSubmit}>
                 <fieldset>
@@ -65,7 +95,11 @@ export function Login() {
                             type="email"
                             name="email"
                             placeholder="email"
+<<<<<<< HEAD
                             onChange={e => setEmail(e.target.value)} // Actualizar el estado del email
+=======
+                            onChange={e => setEmail(e.target.value)}
+>>>>>>> 7dc36d73e5849ab3229e597d870aa014b8e59078
                         />
                     </label>
                     <label>
@@ -74,7 +108,11 @@ export function Login() {
                             type="password"
                             name="password"
                             placeholder="Password"
+<<<<<<< HEAD
                             onChange={e => setPassword(e.target.value)} // Actualizar el estado de la contraseña
+=======
+                            onChange={e => setPassword(e.target.value)}
+>>>>>>> 7dc36d73e5849ab3229e597d870aa014b8e59078
                         />
                     </label>
                     <button className="outline secondary">Iniciar</button>
@@ -96,4 +134,8 @@ export function Login() {
     );
 }
 
+<<<<<<< HEAD
 export default Login;
+=======
+export default Login;
+>>>>>>> 7dc36d73e5849ab3229e597d870aa014b8e59078

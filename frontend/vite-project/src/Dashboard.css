@@ -1,2 +1,9 @@
 .dashboard-container {
+<<<<<<< HEAD
 }
+=======
+    padding: 20px;
+    background-color: #f4f4f4; /* Puedes ajustar el color de fondo según tus necesidades */
+    height: calc(100vh - 150px); /* Ajusta el tamaño según la altura de la barra de navegación */
+}
+>>>>>>> 7dc36d73e5849ab3229e597d870aa014b8e59078
