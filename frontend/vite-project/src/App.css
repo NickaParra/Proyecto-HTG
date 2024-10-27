@@ -34,7 +34,6 @@
 .content-container {
   flex: 1; /* Ocupa el espacio restante */
   padding: 20px;
-<<<<<<< HEAD
   background-image: url('./assets/pantalla.png.jpg'); /* Usa url() para definir la imagen de fondo */
   background-size: cover; /* Opcional: para que la imagen cubra todo el contenedor */
   background-position: center; /* Opcional: para centrar la imagen */  
@@ -45,7 +44,4 @@
   top: 750px !important;
   left: 95px !important;
   position: relative;
-=======
-  background-color: #fff; /* Color de fondo del contenido */
->>>>>>> 7dc36d73e5849ab3229e597d870aa014b8e59078
 }

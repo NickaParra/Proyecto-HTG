@@ -34,10 +34,6 @@
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     height: 100vh; /* Ocupa toda la altura de la ventana */
-<<<<<<< HEAD
-=======
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar el contraste */
->>>>>>> 7dc36d73e5849ab3229e597d870aa014b8e59078
     z-index: 2; /* Asegura que el formulario esté sobre la imagen de fondo */
 }
 
