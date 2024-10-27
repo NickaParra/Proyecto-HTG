@@ -1,0 +1,107 @@
+/* Contenedor para la página principal con la imagen de fondo */
+.login-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.login-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir toda la pantalla sin deformarla */
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+}
+
+/* Estilos del título en la página principal */
+.login-container h1 {
+    position: absolute;
+    top: 20px; /* Ajusta esta propiedad según el margen que desees */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el texto horizontalmente */
+    color: #d36b09;
+    text-align: center;
+    font-size: 48px;
+    z-index: 1;
+}
+
+/* Contenedor para centrar el formulario */
+.login-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    z-index: 2; /* Asegura que el formulario esté sobre la imagen de fondo */
+}
+
+/* Estilos del formulario */
+form {
+    background-color: rgb(145, 6, 25); /* Fondo del formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el formulario */
+    width: 300px; /* Ancho fijo del formulario */
+    display: flex; /* Flexbox para centrar los elementos internos */
+    flex-direction: column; /* Alinear elementos internos en columna */
+}
+
+/* Estilos de los campos y el botón */
+input {
+    width: calc(100% - 22px); /* Ajuste del ancho para el padding y border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #070000;
+    border-radius: 4px;
+}
+
+button {
+    width: calc(100% - 1px); /* Ajuste del ancho para el padding y border */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #cc4d04; /* Color de fondo del botón */
+    color: rgb(243, 239, 239); /* Color del texto del botón */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: rgb(240, 77, 12);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .modal.success .modal-content {
+    border: 2px solid green;
+  }
+  
+  .modal.error .modal-content {
+    border: 2px solid red;
+  }
+  
+  .modal button {
+    padding: 10px;
+    background-color: #111111;
+    color: rgb(240, 27, 12);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,27 @@
+.home-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir toda la pantalla sin deformarla */
+   
+}
+
+.home-container h1 {
+    position: absolute;
+    top: 20px; /* Ajusta esta propiedad según el margen que desees */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el texto horizontalmente */
+    color: #d36b09;
+    text-align: center;
+    font-size: 48px;
+    z-index: 1;
+}

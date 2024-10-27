@@ -1,0 +1,47 @@
+/* Contenedor principal que envuelve toda la app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Contenedor de la barra de navegación */
+.navbar-container {
+  height: 150px; /* Ajusta la altura de la barra de navegación */
+  background-color: rgb(158, 6, 19); /* Color de fondo de la barra de navegación */
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 2px;
+}
+
+/* Contenedor principal dividido en menú lateral y contenido */
+.main-container {
+  display: flex;
+  flex: 1; /* Permite que ocupe el espacio restante debajo de la barra de navegación */
+}
+
+/* Contenedor del menú lateral */
+.menu-container {
+  width: 200px; /* Ancho del menú lateral */
+  background-color: #cc4d04; /* Color de fondo del menú lateral */
+  padding: 10px;
+  height: calc(100vh - 150px); /* Resta la altura de la barra de navegación para que ocupe toda la altura restante */
+  box-sizing: border-box; /* Incluye el padding dentro del alto total */
+}
+
+/* Contenedor del contenido principal */
+.content-container {
+  flex: 1; /* Ocupa el espacio restante */
+  padding: 20px;
+  background-image: url('./assets/pantalla.png.jpg'); /* Usa url() para definir la imagen de fondo */
+  background-size: cover; /* Opcional: para que la imagen cubra todo el contenedor */
+  background-position: center; /* Opcional: para centrar la imagen */  
+}
+
+.iconos{
+  width: 50px !important;
+  top: 750px !important;
+  left: 95px !important;
+  position: relative;
+}

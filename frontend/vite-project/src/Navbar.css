@@ -1,0 +1,48 @@
+.Navbar {
+    width: 350%; /* Asegura que ocupe todo el ancho de la pantalla */
+    padding: 200px; /* Reduce el padding para que la barra no sea demasiado alta */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(158, 6, 19); /* Color de fondo */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+
+.Navbar img {
+    width: 100px;
+    height: auto;
+}
+
+.Navbar nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; /* Asegura que los elementos estén distribuidos correctamente */
+}
+
+.Navbar ul li {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo específico para alinear el <strong> a la izquierda */
+.Navbar ul li strong {
+    margin-left: auto; /* Empuja el contenido restante hacia la derecha */
+    padding-right: 10px; /* Espacio a la izquierda */
+}
+
+.Navbar input {
+    margin: 0px;
+    width: 250px;
+}
