@@ -19,7 +19,7 @@
 /* Estilos del título en la página principal */
 .login-container h1 {
     position: absolute;
-    top: 200px; /* Ajusta esta propiedad según el margen que desees */
+    top: 100px; /* Ajusta esta propiedad según el margen que desees */
     left: 50%;
     transform: translateX(-50%); /* Centra el texto horizontalmente */
     color: #f5f1ee;
