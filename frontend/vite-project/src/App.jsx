@@ -6,7 +6,6 @@ import Home from './Home';
 import Register from './Register';
 import { Dashboard } from './Dashboard';
 import youtube  from './assets/youtube.svg';
-import spotify  from './assets/spotify.svg';
 import instagram  from './assets/instagram.svg';
 
 

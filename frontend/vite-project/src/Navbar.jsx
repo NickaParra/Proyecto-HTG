@@ -3,34 +3,29 @@ import { Link } from 'react-router-dom';
 import htg from './assets/htg.jpg';
 import './Navbar.css';
 
-
-function Navbar(){
-    return(
+function Navbar() {
+    return (
         <div className="Navbar">
-            <nav role="navigation" aria-label="Main navigation">
-                <img src={htg} alt="htg" />
-                <ul>
-                    <li>
-                        <strong> HTG Hiit The Gym</strong> 
-                                             
-                        <li>
-                            <Link to="/"> Home </Link>
-                        </li>
-                        <li>
-                            <Link to="/Login"> Login </Link>
-                        </li>
-                        <li>
-                            <Link to="/Register"> Register</Link>
-                        </li>
-                    </li>
-                </ul>
-
-
+            <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: 'rgb(0, 0, 0)' }}>
+                <div className="container-fluid">
+                    <img src={htg} alt="htg" className="navbar-brand"/>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <Link to="/" className="nav-link">Home</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/Login" className="nav-link">Login</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/Register" className="nav-link">Register</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-
         </div>
-        
-    )
-
+    );
 }
+
 export default Navbar;

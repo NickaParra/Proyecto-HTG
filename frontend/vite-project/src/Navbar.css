@@ -1,23 +1,18 @@
 .Navbar {
-    width: 350%; /* Asegura que ocupe todo el ancho de la pantalla */
-    padding: 200px; /* Reduce el padding para que la barra no sea demasiado alta */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(158, 6, 19); /* Color de fondo */
+    width: 50%; /* Asegura que ocupe todo el ancho de la pantalla */
+    padding: 0; /* Elimina el padding para que la barra no sea demasiado alta */
     box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
 
-
 .Navbar img {
-    width: 100px;
-    height: auto;
+    width: 100px; /* Ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 .Navbar nav {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 80%;
 }
 
 .Navbar ul {
@@ -31,18 +26,12 @@
 }
 
 .Navbar ul li {
-    margin: 0 15px;
+    margin: 0 5px;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Estilo específico para alinear el <strong> a la izquierda */
-.Navbar ul li strong {
-    margin-left: auto; /* Empuja el contenido restante hacia la derecha */
-    padding-right: 10px; /* Espacio a la izquierda */
-}
-
 .Navbar input {
     margin: 0px;
-    width: 250px;
+    width: 150px; /* Ajusta el ancho del input si lo necesitas */
 }

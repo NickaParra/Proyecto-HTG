@@ -8,8 +8,8 @@
 /* Contenedor de la barra de navegación */
 .navbar-container {
   height: 150px; /* Ajusta la altura de la barra de navegación */
-  background-color: rgb(158, 6, 19); /* Color de fondo de la barra de navegación */
-  color: white;
+  background-color: rgb(5, 5, 5); /* Color de fondo de la barra de navegación */
+  color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
   padding: 0 2px;
@@ -24,7 +24,7 @@
 /* Contenedor del menú lateral */
 .menu-container {
   width: 200px; /* Ancho del menú lateral */
-  background-color: #cc4d04; /* Color de fondo del menú lateral */
+  background-color: #0c0c0b; /* Color de fondo del menú lateral */
   padding: 10px;
   height: calc(100vh - 150px); /* Resta la altura de la barra de navegación para que ocupe toda la altura restante */
   box-sizing: border-box; /* Incluye el padding dentro del alto total */
@@ -34,7 +34,7 @@
 .content-container {
   flex: 1; /* Ocupa el espacio restante */
   padding: 20px;
-  background-image: url('./assets/pantalla.png.jpg'); /* Usa url() para definir la imagen de fondo */
+  background-image: url('./assets/AHORA.jpg'); /* Usa url() para definir la imagen de fondo */
   background-size: cover; /* Opcional: para que la imagen cubra todo el contenedor */
   background-position: center; /* Opcional: para centrar la imagen */  
 }

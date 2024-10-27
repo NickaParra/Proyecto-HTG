@@ -43,7 +43,7 @@ export function Register() {
                     // Redirigir después de un breve tiempo
                     setTimeout(() => {
                         setIsModalOpen(false);
-                        navigate('./Dashboard.jsx');
+                        navigate('/Login');
                     }, 2000);
                 }
             })

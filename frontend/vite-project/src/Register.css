@@ -20,10 +20,10 @@
 
 .register-container h1 {
     position: absolute;
-    top: 20px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
-    color: #d36b09;
+    color: #f9f6f4;
     text-align: center;
     font-size: 2.5rem;
     z-index: 1;

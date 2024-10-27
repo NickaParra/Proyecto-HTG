@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import './Dashboard.css';
 
 export function Dashboard() {
-    const [userData, setUser ] = useState(null); // Estado para almacenar los datos del usuario
+    const [userData, setUser  ] = useState(null); // Estado para almacenar los datos del usuario
     const navigate = useNavigate(); // Hook para redirigir a otras rutas
 
     useEffect(() => {
@@ -32,12 +32,64 @@ export function Dashboard() {
     }, [navigate]);
 
     return (
-        <div className="dashboard-container">
-            <h1>Bienvenido al Dashboard</h1>
-            <h2>Sé tu mejor versión</h2>
-        
-        </div>
-        
+        <>
+            <h1 className="h1">¡Hola! Bienvenidos a Hiit The Gym </h1>
+            <h2>¡Comienza con alguno de nuestros programas de entretenimiento HOY mismo!</h2>
+
+            <div className="card-container">
+    <div className="card">
+        <h3>Reto Quema Grasa</h3>
+        <iframe 
+            width="100%" 
+            height="200" 
+            src="https://www.youtube.com/embed/vAy6xceYevY?t=706" 
+            title="Video de YouTube" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen>
+        </iframe>
+    </div>
+
+    <div className="card">
+        <h3>Reto Renacer</h3>
+        <iframe 
+            width="100%" 
+            height="200" 
+            src="https://www.youtube.com/embed/REN-D42zzgo?t=8" 
+            title="Video de YouTube" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen>
+        </iframe>
+    </div>
+
+    <div className="card">
+        <h3>Reto Fit Essentials</h3>
+        <iframe 
+            width="100%" 
+            height="200" 
+            src="https://www.youtube.com/embed/MuvCQaLB2rY?t=12" 
+            title="Video de YouTube" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen>
+        </iframe>
+    </div>
+</div>
+
+<div className="video-container">
+    <h2>Somos HTG Podcast</h2>
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/sqa_EGXiJMU?list=PL4JW8l9Nyc23l-7XeEpv7TY1HZjuSFWk2" 
+        title="Video de YouTube" 
+        frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowFullScreen>
+    </iframe>
+</div>
+        </>
     );
 }
 

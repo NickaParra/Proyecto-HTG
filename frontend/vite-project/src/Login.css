@@ -19,10 +19,10 @@
 /* Estilos del título en la página principal */
 .login-container h1 {
     position: absolute;
-    top: 20px; /* Ajusta esta propiedad según el margen que desees */
+    top: 200px; /* Ajusta esta propiedad según el margen que desees */
     left: 50%;
     transform: translateX(-50%); /* Centra el texto horizontalmente */
-    color: #d36b09;
+    color: #f5f1ee;
     text-align: center;
     font-size: 48px;
     z-index: 1;
@@ -89,17 +89,25 @@ button {
   }
   
   .modal.success .modal-content {
-    border: 2px solid green;
-  }
-  
+    border: 5px solid rgb(10, 10, 10);
+    padding: 0;
+    width: 500px; /* Ajusta el ancho aquí */
+    max-width: 90%; /* Para que no exceda el 90% del ancho de la ventana */
+    margin: auto; /* Centrar el modal */
+}
+
   .modal.error .modal-content {
-    border: 2px solid red;
+    border: 5px solid red;
+    padding: 0;
+    width: 500px; /* Ajusta el ancho aquí */
+    max-width: 90%; /* Para que no exceda el 90% del ancho de la ventana */
+    margin: auto; /* Centrar el modal */
   }
   
   .modal button {
     padding: 10px;
-    background-color: #111111;
-    color: rgb(240, 27, 12);
+    background-color: #f40707;
+    color: rgb(7, 7, 7);
     border: none;
     border-radius: 5px;
     cursor: pointer;
