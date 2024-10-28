@@ -1,15 +1,18 @@
 /* Estilos para el título h1 */
 .h1 {
-    color: rgb(247, 243, 243); /* Cambia el color del texto a naranja */
+    color: #e49709; /* Cambia el color del texto a naranja */
     text-align: center; /* Centra el texto */
     margin-top: 20px; /* Espaciado superior (ajusta según sea necesario) */
+    font-size: 50px;
+    font-weight: bold;
 }
 
 /* Estilos para el subtítulo h2 */
 h2 {
-    color: rgb(248, 245, 242); /* Cambia el color del texto a negro */
+    color: rgb(246, 241, 241); /* Cambia el color del texto a negro */
     text-align: center; /* Centra el texto */
     margin-top: 10px; /* Espaciado superior (ajusta según sea necesario) */
+    font-size: 35px;
 }
 
 /* Resto de tu CSS */
@@ -21,15 +24,16 @@ h2 {
 }
 
 .card {
-    background-color: #f30909; /* Color de fondo de la tarjeta */
+    background-color: #f3bc0963; /* Color de fondo de la tarjeta */
     border: 1px solid #0c0c0c; /* Borde de la tarjeta */
     border-radius: 10px; /* Bordes redondeados */
     padding: 20px; /* Espaciado interno */
     margin: 10px; /* Margen entre tarjetas */
     width: calc(30% - 40px); /* Ancho de la tarjeta, ajustado para márgenes */
-    box-shadow: 0 4px 8px rgb(255, 255, 255); /* Sombra para efecto de elevación */
+    box-shadow: 0 4px 8px rgb(12, 12, 12); /* Sombra para efecto de elevación */
     transition: transform 0.3s; /* Transición suave al hacer hover */
     text-align: center; /* Centra el texto dentro de la tarjeta */
+
 }
 
 .card:hover {
@@ -43,4 +47,17 @@ h3 {
 
 p {
     color: #0d0d0d; /* Color del texto */
+}
+
+.video-container {
+    text-align: center; /* Centra el video */
+    margin-top: 40px; /* Espacio superior */
+    z-index: 1; /* Asegura que el contenido esté por encima de la imagen de fondo */
+    
+}
+
+.video-container iframe {
+    border: none; /* Sin borde para el iframe */
+    border-radius: 10px; /* Bordes redondeados para el iframe */
+    box-shadow: 0 4px 8px rgb(241, 237, 237); /* Sombra para efecto de elevación */
 }

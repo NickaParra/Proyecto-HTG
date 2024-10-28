@@ -22,10 +22,11 @@
     top: 100px; /* Ajusta esta propiedad según el margen que desees */
     left: 50%;
     transform: translateX(-50%); /* Centra el texto horizontalmente */
-    color: #f5f1ee;
+    color: #e49709;
     text-align: center;
-    font-size: 48px;
+    font-size: 50px;
     z-index: 1;
+    font-weight: bold;
 }
 
 /* Contenedor para centrar el formulario */

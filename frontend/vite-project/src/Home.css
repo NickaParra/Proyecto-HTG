@@ -19,15 +19,16 @@
     top: 20px; /* Ajusta esta propiedad según el margen que desees */
     left: 50%;
     transform: translateX(-50%); /* Centra el texto horizontalmente */
-    color: #f7f2f2; /* Color del texto */
+    color: #e49709; /* Color del texto */
     text-align: justify;
-    font-size: 48px; /* Tamaño de la fuente */
+    font-size: 50px; /* Tamaño de la fuente */
     z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+    font-weight: bold;
 }
 
 .home-container h2 {
     text-align: center; /* Centra el texto */
-    font-size: 32px; /* Tamaño de la fuente */
+    font-size: 40px; /* Tamaño de la fuente */
     color: #f4f2f2; /* Color del texto */
     margin-top: 100px; /* Espacio superior */
     z-index: 1; /* Asegura que el texto esté por encima de la imagen de fondo */
@@ -69,21 +70,14 @@
 }
 
 .card h3 {
-    color: #eae8e8; /* Color del encabezado */
+    color: #0c0c0c; /* Color del encabezado */
     margin-bottom: 10px; /* Espaciado inferior */
+    font-size: 35px;
+    font-weight: bold; /* Hace que el texto sea negrita */
 }
 
 .card p {
-    color: #555; /* Color del texto */
-}
-
-.video-container {
-    text-align: center; /* Centra el video */
-    margin-top: 40px; /* Espacio superior */
-    z-index: 1; /* Asegura que el contenido esté por encima de la imagen de fondo */
-}
-
-.video-container iframe {
-    border: none; /* Sin borde para el iframe */
-    border-radius: 10px; /* Bordes redondeados para el iframe */
+    color: #faf8f4; /* Color del texto */
+    font-size: 20px;
+    text-align: justify; /* Justifica el texto */
 }
