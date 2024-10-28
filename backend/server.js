@@ -3,21 +3,22 @@ const express = require("express");
 const mysql = require("mysql");
 const cors = require("cors");
 const jwt = require("jsonwebtoken"); // Importar jsonwebtoken
+const dotenv = require("dotenv");
 
 // Configuración del servidor
 const app = express();
 app.use(express.json());
 app.use(cors());
+dotenv.config();
 
 const SECRET_KEY = "6$ty9EyLqWHPJzVd$KFtV7MK3"; // Cambia esto a una clave secreta más segura
 
 // Conexión a base de datos
 const Conexión = mysql.createConnection({
-    host: "localhost",
-    port: 3306,
-    database: "datos usuario", // Nombre correcto de la base de datos
-    user: "root",
-    password: ""
+    host: process.env.MYSQL_ADDON_HOST,
+    database: process.env.MYSQL_ADDON_DB,
+    user: process.env.MYSQL_ADDON_USER,
+    password: process.env.MYSQL_ADDON_PASSWORD
 });
 
 // Abrir la conexión a la base de datos
