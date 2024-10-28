@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import htg from './assets/htg.jpg';
 import './Navbar.css';
 
-function Navbar() {
+function Navbar({ userData }) {
     return (
         <div className="Navbar">
             <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: 'rgb(0, 0, 0)' }}>
                 <div className="container-fluid">
-                    <img src={htg} alt="htg" className="navbar-brand"/>
+                    <img src={htg} alt="htg" className="navbar-brand" />
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
@@ -22,6 +22,11 @@ function Navbar() {
                             </li>
                         </ul>
                     </div>
+                    {userData && (
+                        <div className="user-info">
+                            <span className="email">{userData.email}</span>
+                        </div>
+                    )}
                 </div>
             </nav>
         </div>

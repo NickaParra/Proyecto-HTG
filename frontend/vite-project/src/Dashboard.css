@@ -61,3 +61,35 @@ p {
     border-radius: 10px; /* Bordes redondeados para el iframe */
     box-shadow: 0 4px 8px rgb(241, 237, 237); /* Sombra para efecto de elevación */
 }
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #b20b0b3d; /* Color de fondo de la barra de navegación */
+    color: rgba(214, 187, 13, 0.64); /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    display: flow-root; /* Usar flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: flex-end; /* Centrar verticalmente */
+    
+}
+
+.navbar-title {
+    font-size: 24px; /* Tamaño de la fuente del título */
+    margin: 0; /* Eliminar margen por defecto */
+    align-items: flex-end; /* Alinear a la derecha */
+    display: flow-root; /* Usar flexbox para alinear elementos */
+}
+
+.user-info {
+    display: flex; /* Usar flexbox para alinear nickname, nombre y email */
+    flex-direction: column; /* Colocar nickname, nombre y email en columna */
+    align-items: flex-end; /* Alinear a la derecha */
+
+}
+
+.email {
+    margin-left: 10px; /* Espaciado entre los elementos */
+    font-size: 20px; /* Tamaño de la fuente */
+    color: #f8f6f1a2; /* Color del texto */
+    align-items: flex-end; /* Alinear a la derecha */
+    
+} 
