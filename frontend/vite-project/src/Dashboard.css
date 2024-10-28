@@ -24,7 +24,7 @@ h2 {
 }
 
 .card {
-    background-color: #f3bc0963; /* Color de fondo de la tarjeta */
+    background-color: #f3bc09a7; /* Color de fondo de la tarjeta */
     border: 1px solid #0c0c0c; /* Borde de la tarjeta */
     border-radius: 10px; /* Bordes redondeados */
     padding: 20px; /* Espaciado interno */
@@ -41,7 +41,7 @@ h2 {
 }
 
 h3 {
-    color: #f8f2f2; /* Color del encabezado */
+    color: #e4bb13; /* Color del encabezado */
     margin-bottom: 10px; /* Espaciado inferior */
 }
 
