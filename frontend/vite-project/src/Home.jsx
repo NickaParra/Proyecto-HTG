@@ -2,7 +2,7 @@ import React from "react";
 import './Home.css';
 // Asegúrate de importar las imágenes que vas a usar
 import HTG from './assets/HTG.webp'; // Cambia la ruta según corresponda
-import INICIO from './assets/inicio.jpg'; // Cambia la ruta según corresponda
+import INICIO from './assets/INICIO.jpg'; // Cambia la ruta según corresponda
 import H from './assets/H.jpg'; // Cambia la ruta según corresponda
 
 function Home() {
